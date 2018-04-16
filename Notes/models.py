@@ -9,4 +9,7 @@ class Note(models.Model):
   content = models.TextField(blank = True)
   createdAt = models.DateTimeField(auto_now_add = True)
   lastModified = models.DateTimeField(auto_now = True)
-  user = models.ForeignKey (User, on_delete = models.CASCADE)
+  user = models.ForeignKey(User, on_delete = models.CASCADE)
+  @property
+  def content_length(self):
+    return len(self.content)
