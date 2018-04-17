@@ -1,3 +1,4 @@
 {
-  "python.linting.pylintEnabled": false
+  "python.linting.pylintEnabled": false,
+  "python.pythonPath": "/Users/Jaspinder/.local/share/virtualenvs/djorg-GcP_ucKh/bin/python"
 }
